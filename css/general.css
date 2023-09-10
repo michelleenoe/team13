@@ -1,102 +1,95 @@
-
-
 * {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+  /*color: #fff;*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-
 .dropdown-menu ul {
-    background-color: #d2d2d2;
-    width: 300px;
+  background-color: #d2d2d2;
+  width: 300px;
 }
 
 .menu-item {
-    position: relative;
+  position: relative;
 }
 
 .menu-item > a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 
 .menu-item > a:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
 .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 200px; 
-    z-index: 1;
-
-
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  z-index: 1;
 }
 
 .menu-item:hover .submenu {
-    display: block;
+  display: block;
 }
 
 .submenu-item {
-    position: relative;
+  position: relative;
 }
 
 .submenu-item > a {
-    padding: 10px 20px;
-    color: #fff;
-    display: block; 
-    white-space: nowrap; 
+  padding: 10px 20px;
+  color: #fff;
+  display: block;
+  white-space: nowrap;
 }
 
 .submenu-item > a:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 .nested-submenu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 200px; 
-    z-index: 2;
-    border-left: 2px solid #fff;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  z-index: 2;
+  border-left: 2px solid #fff;
 }
 
 .submenu-item:hover .nested-submenu {
-    display: block;
+  display: block;
 }
 
 .nested-submenu a {
-    padding: 10px 20px;
-    color: #fff;
-    display: block; 
-    white-space: nowrap; 
+  padding: 10px 20px;
+  color: #fff;
+  display: block;
+  white-space: nowrap;
 }
 
 .nested-submenu a:hover {
-    background-color: #666;
+  background-color: #666;
 }
 
-
 .submenu-item:nth-child(1) .nested-submenu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 200px;
-    z-index: 2;
-    border-left: 2px solid #fff;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  z-index: 2;
+  border-left: 2px solid #fff;
 }
 
 .submenu-item:nth-child(1):hover .nested-submenu {
-    display: block;
-
+  display: block;
 }
 
 /**********************ITEM LIST**********************/
