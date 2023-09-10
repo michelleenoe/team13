@@ -1,4 +1,5 @@
 
+
 * {
     color: #fff;
     margin: 0;
@@ -95,4 +96,41 @@
 
 .submenu-item:nth-child(1):hover .nested-submenu {
     display: block;
+
+}
+
+/**********************ITEM LIST**********************/
+.grid_itemlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1px;
+  place-items: center;
+}
+
+.grid_itemlist img {
+  height: 100%;
+  width: auto;
+  display: flex;
+}
+
+.grid_itemlist p {
+  text-align: center;
+}
+
+.itemslist h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.itemslist h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.itemslist h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5em;
 }
