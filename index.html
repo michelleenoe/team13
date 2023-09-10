@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landingpage</title>
-    <link rel="general" a href="../css/general.css">
-    <link rel="stylesheet" a href="../css/style.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<header>
-    
-</header>
+<header></header>
 <body>
+    <nav class="dropdown-menu">
+        <ul>
+            <li class="menu-item">
+                <a href="#">Menu</a>
+                <ul class="submenu">
+                    <li class="submenu-item">
+                        <a href="#">Landskab/område</a>
+                        <ul class="nested-submenu">
+                            <li class="submenu-item">
+                                <a href="#">Vand</a>
+                                <ul class="nested-submenu">
+                                    <li><a href="#">Strand</a></li>
+                                    <li><a href="#">Strandeng</a></li>
+                                    <li><a href="#">Vandløb</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item"><a href="#">Skov</a></li>
+                            <li class="submenu-item"><a href="#">Åbent landskab</a></li>
+                            <li class="submenu-item"><a href="#">By</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#">Råvarer</a>
+                        <ul class="nested-submenu">
+                            <li class="submenu-item"><a href="#">Vand</a></li>
+                            <li class="submenu-item"><a href="#">Skov</a></li>
+                            <li class="submenu-item"><a href="#">Åbent landskab</a></li>
+                            <li class="submenu-item"><a href="#">By</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="#">Opskrifter</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
-
-<!-- Nav:
-Landskab/område
-- Vand
-    - Strand
-    - Standeng
-    - Vandløb
-- Skov
-- Åbent landskab
-- By
-Opskrifter 
-Råvare 
-- Vand
-- Skov
-- Åbent landskab 
-- By -->
