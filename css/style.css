@@ -1,0 +1,38 @@
+html {
+  --primary: #;
+  --secondary: #;
+  --header: #;
+  --background: ;
+  --kontrast: ;
+}
+/*******************img************************/
+img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/*******************Banner************************/
+.banner {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.banner h1:first-child {
+  color: white;
+  font-size: 15cqw;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 10;
+  filter: drop-shadow(4px 2px 5px #00000069);
+}
+
+.banner img:last-child {
+  grid-row: 1;
+  grid-column: 1;
+}
