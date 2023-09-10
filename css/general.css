@@ -8,7 +8,7 @@
 }
 
 .grid_itemlist img {
-  height: 200px;
+  height: 100%;
   width: auto;
   display: flex;
 }
