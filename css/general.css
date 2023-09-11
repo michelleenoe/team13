@@ -1,13 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 * {
-  font-family: 'Wellfleet', serif;
+  font-family:  'Lato', sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
-
+h1, h2, h3, ul, li, a {
+  font-family: 'Wellfleet', serif;
+}
 /************************MENU*****************************/
 .dropdown-menu ul {
   width: 200px;
