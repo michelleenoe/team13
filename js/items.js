@@ -11,6 +11,11 @@ fetch=(url, {
 .then((res) => res.json())
 .then(showNavne);
 
+function showNavne(navne) {
+    //looper og kalder showNavne
+    navne.forEach(showNavn);
+  }
+
 function showNavn(navn) {
     console.log(navn);
 }
@@ -21,22 +26,10 @@ function showNavn(navn) {
   
     copy.querySelector("h2").textContent = navn.productdisplayname;
     copy.querySelector(".landskab").innerHTML= navn.landskab;
-    copy.querySelector(".brand").textContent = navn.brandname;
+    copy.querySelector(".season").textContent = navn.season;
   
-    if (product.soldout) {
-      //produktet er udsolgt
-      copy.querySelector("article").classList.add("soldOut");
-    }
-    copy
-      .querySelector(".read-more")
-      .setAttribute("href", `produkt.html?id=${product.id}`);
-    copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-    copy
-    .querySelector(".fucker")
-    .setAttribute("href", `produkt.html?id=${product.id}`);
-  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-    //appende
+    
   
     document.querySelector("main").appendChild(copy);
-  }
+
   
