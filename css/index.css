@@ -44,20 +44,30 @@ html {
   background-color: red;
   margin: 5px;
   padding: 200px;
+  color: white;
+  text-decoration: none;
 }
 .strandencontainer {
   background-color: blue;
   margin: 5px;
   padding: 200px;
+  color: white;
+  text-decoration: none;
 }
 .vandloebcontainer {
   background-color: green;
   margin: 5px;
   padding: 200px;
+  color: white;
+  text-decoration: none;
+}
+a {
+  color: inherit;
 }
 .textbox {
   margin: 5px;
   margin-top: 10px;
   background-color: blueviolet;
   padding: 5px;
+  color: white;
 }
