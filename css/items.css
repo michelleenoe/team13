@@ -85,6 +85,8 @@
   display: block;
 }
 
+/* media på tabs */
+
 @media (max-width: 45em) {
   .tabs .tab,
   .tabs label {
