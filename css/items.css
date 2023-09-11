@@ -29,10 +29,19 @@
   translate: 0% -40%;
 }
 
-.like {
+#like {
   height: 150px;
   width: 150px;
   border-radius: 50%;
+  background-size: cover;
+}
+
+.like {
+  background-image: url(../img/emptyheart.svg);
+}
+
+.liked {
+  background-image: url(../img/fullheart.svg);
 }
 
 /*** Tabs - har taget udgangspunkt i denne fra codepen: https://codepen.io/mikestreety/pen/yVNNNm ***/
