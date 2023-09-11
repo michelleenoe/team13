@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
 * {
-  /*color: #fff;*/
+  font-family: 'Wellfleet', serif;
   margin: 0;
   padding: 0;
   list-style: none;
