@@ -10,7 +10,7 @@ fetch=(url, {
 .then(showNavne);
 
 function showNavne(navne) {
-    //looper og kalder showNavne
+    //looper og kalder showNavn
     navne.forEach(showNavn);
   }
 
