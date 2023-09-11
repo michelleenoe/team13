@@ -7,25 +7,23 @@
 
 .logo img {
   border-radius: 50% !important;
-
 }
-.picleft img{
+.picleft img {
   max-width: 100px;
   height: auto;
   border-radius: 50% !important;
 }
-.picright_nav img{
+.picright_nav img {
   max-width: 100px;
   position: absolute;
-  top:0%;
+  top: 0%;
   right: 15px;
   border-radius: 50% !important;
-
 }
 
 .header-content {
   display: flex;
-  align-items: center; 
+  align-items: center;
   background-color: darkolivegreen;
 }
 /* */
@@ -37,7 +35,7 @@ html {
   --background: ;
   --kontrast: ;
 }
-/* ******************img************************/ 
+/* ******************img************************/
 img {
   width: 100%;
   height: auto;
@@ -67,8 +65,4 @@ img {
 .banner img:last-child {
   grid-row: 1;
   grid-column: 1;
-}
-
-img {
-  width:100%;
 }
