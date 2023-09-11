@@ -8,8 +8,8 @@
 
 /************************MENU*****************************/
 .dropdown-menu ul {
-  background-color: #d2d2d2;
-  width: 300px;
+  width: 200px;
+  background-color:darkolivegreen;
 }
 
 .menu-item {
@@ -20,6 +20,7 @@
   display: block;
   padding: 10px 15px;
   text-decoration: none;
+  color:black;
 }
 
 .menu-item > a:hover {

@@ -1,3 +1,29 @@
+/* øvrige header */
+
+.logo {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.picleft img{
+  max-width: 100px;
+  height: auto;
+}
+.picright_nav img{
+  max-width: 100px;
+  position: absolute;
+  top:0%;
+  right: 15px;
+
+}
+
+.header-content {
+  display: flex;
+  align-items: center; 
+  background-color: darkolivegreen;
+}
+/* */
+
 html {
   --primary: #;
   --secondary: #;
@@ -5,7 +31,7 @@ html {
   --background: ;
   --kontrast: ;
 }
-/*******************img************************/
+/* ******************img************************/ 
 img {
   width: 100%;
   height: auto;
@@ -35,4 +61,9 @@ img {
 .banner img:last-child {
   grid-row: 1;
   grid-column: 1;
+}
+
+img {
+  border-radius: 50%;
+  width:100%;
 }
