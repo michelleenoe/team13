@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "pt_serifregular", sans-serif;
+  background-color: white;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.vedvandetbanner {
+  background-image: url(/img/Stranden-color-big.webp);
+  width: auto;
+  height: 100%;
+}
+.vedvandetbanner h1 {
+  font-size: 5rem;
+  padding: 200px;
+  text-align: center;
+  color: white;
+  font-family: lato;
+  font-weight: 900;
+  filter: drop-shadow(4px 2px 5px #00000069);
+}
+.kategoriparent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+.strandengencontainer {
+  background-color: red;
+  margin: 5px;
+  padding: 200px;
+}
+.strandencontainer {
+  background-color: blue;
+  margin: 5px;
+  padding: 200px;
+}
+.vandloebcontainer {
+  background-color: green;
+  margin: 5px;
+  padding: 200px;
+}
