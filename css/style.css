@@ -5,15 +5,21 @@
   margin-right: 20px;
 }
 
+.logo img {
+  border-radius: 50% !important;
+
+}
 .picleft img{
   max-width: 100px;
   height: auto;
+  border-radius: 50% !important;
 }
 .picright_nav img{
   max-width: 100px;
   position: absolute;
   top:0%;
   right: 15px;
+  border-radius: 50% !important;
 
 }
 
@@ -64,6 +70,5 @@ img {
 }
 
 img {
-  border-radius: 50%;
   width:100%;
 }

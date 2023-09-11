@@ -10,10 +10,22 @@ fetch=(url, {
 })
 
 .then((res) => res.json())
-.then(showProducts);
+.then(showKategorier)
 
-function showProducts (products) {
-    products.forEach(showProduct);
+ function showKategorier (Kategorier) {
+    kategorier.forEach(showKategori)
+ }
 
-}
+ function showKategori(kategori) {
+//fanger templ
+const template = document.querySelector("template").content;
 
+//kloner
+const clone = template.cloneNode(true);
+//ændrer indhold
+clone.querySelector("a").textContent = kategori.kategori;
+clone.querySelector("a").href= `itemslist.html?kategori=${kategori.kategori}`;
+//appender
+document.querySelector(".kategori-grid").appendChild(clone);
+
+ }

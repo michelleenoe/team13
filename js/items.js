@@ -9,8 +9,27 @@ fetch=(url, {
 })
 
 .then((res) => res.json())
-.then(showProducts);
+.then(showNavne);
 
-function showProduct(product) {
-    console.log(product);
+function showNavne(navne) {
+    //looper og kalder showNavne
+    navne.forEach(showNavn);
+  }
+
+function showNavn(navn) {
+    console.log(navn);
 }
+    const template = document.querySelector("#Template").content;
+    //lav en kopi
+    const copy = template.cloneNode(true);
+    //ændre indhold
+  
+    copy.querySelector("h2").textContent = navn.productdisplayname;
+    copy.querySelector(".landskab").innerHTML= navn.landskab;
+    copy.querySelector(".season").textContent = navn.season;
+  
+    
+  
+    document.querySelector("main").appendChild(copy);
+
+  
