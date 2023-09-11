@@ -13,17 +13,24 @@
 .buttonscontainer {
   display: flex;
   justify-content: space-around;
-  translate: 0% -50%;
+  translate: 0% -20%;
 }
 
 .cam {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
 
 .item {
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
+  translate: 0% -40%;
 }
 
 .like {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
