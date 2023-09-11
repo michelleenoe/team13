@@ -38,3 +38,13 @@ copy.querySelector(".landskab").innerHTML = navn.landskab;
 copy.querySelector(".season").textContent = navn.season;
 
 document.querySelector("main").appendChild(copy);
+
+async function like() {
+  try {
+    // await fetch('et_eller_andet_url')
+    document.querySelector("#like").classList.toggle("like");
+    document.querySelector("#like").classList.toggle("liked");
+  } catch (e) {
+    console.error(e);
+  }
+}
