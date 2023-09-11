@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     submenu.addEventListener('mouseover', function (e) {
         const target = e.target;
         if (target && target.classList.contains('submenu-item')) {
-            if (target.textContent === 'Landskab/område') {
+            if (target.textContent == 'Landskab') {
                 nestedSubmenu.style.display = 'none';
                 isOverVand = false;
             }
