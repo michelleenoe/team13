@@ -9,3 +9,21 @@
 .banner {
   background-color: bisque;
 }
+
+.buttonscontainer {
+  display: flex;
+  justify-content: space-around;
+  translate: 0% -50%;
+}
+
+.cam {
+  border-radius: 50%;
+}
+
+.item {
+  border-radius: 50%;
+}
+
+.like {
+  border-radius: 50%;
+}
