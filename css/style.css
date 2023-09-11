@@ -1,3 +1,11 @@
+html {
+  --primary: #2f5576;
+  --secondary: #709f80;
+  --header: #246a59;
+  --background: #f1d8b6;
+  --contrast: #ef796b;
+}
+
 /* øvrige header */
 
 .logo {
@@ -28,13 +36,6 @@
 }
 /* */
 
-html {
-  --primary: #;
-  --secondary: #;
-  --header: #;
-  --background: ;
-  --kontrast: ;
-}
 /* ******************img************************/
 img {
   width: 100%;
