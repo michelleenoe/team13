@@ -27,10 +27,12 @@
 .item {
   height: 400px;
   width: 400px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   translate: 0% -40%;
   margin-bottom: 0;
   padding-bottom: 0;
+  background-image: url(../img/Strandmalde.png);
+  background-repeat: no-repeat;
 }
 
 #like {
