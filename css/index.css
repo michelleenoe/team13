@@ -27,22 +27,19 @@ html {
   height: 100%;
 }
 .vedvandetbanner h1 {
-  font-size: 5rem;
-  padding: 200px;
+  font-size: 4rem;
+  padding: 0;
   text-align: center;
   color: white;
   font-family: lato;
   font-weight: 300;
   filter: drop-shadow(4px 2px 5px #00000069);
 }
-.kategoriparent {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 575px);
-  text-align: center;
-  justify-content: center;
+.vedvandetbanner h1 {
+  padding: 200px 0; /* Adjust to your preference */
 }
 .strandengencontainer {
-  background-color: red;
+  background-color: #709f80;
   margin: 5px;
   padding: 20px;
   height: 600px;
@@ -53,7 +50,7 @@ html {
   align-items: center;
 }
 .strandencontainer {
-  background-color: blue;
+  background-color: #709f80;
   margin: 5px;
   padding: 20px;
   height: 600px;
@@ -64,7 +61,7 @@ html {
   align-items: center;
 }
 .vandloebcontainer {
-  background-color: green;
+  background-color: #709f80;
   margin: 5px;
   padding: 20px;
   height: 600px;
@@ -73,6 +70,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.strandengencontainer:hover,
+.strandencontainer:hover,
+.vandloebcontainer:hover {
+  background-color: #2f5576;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .strandengencontainer img,
 .strandencontainer img,
@@ -94,42 +97,21 @@ html {
   font-family: lato;
   font-weight: 300;
   font-size: 2rem;
+  color: white;
 }
-.strandengencontainer a,
-.strandencontainer a,
-.vandloebcontainer a {
+.strandengencontainer p,
+.strandencontainer p,
+.vandloebcontainer p {
   font-family: lato;
   font-weight: 300;
   font-size: 2rem;
-  border-style: solid;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.strandengencontainer a:hover {
-  background-color: #ffffff;
-  color: #ff0000;
-}
-.strandencontainer a:hover {
-  background-color: #ffffff;
-  color: blue;
-}
-.vandloebcontainer a:hover {
-  background-color: #ffffff;
-  color: green;
-}
-
-a {
-  color: inherit;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: white;
 }
 .textbox {
   margin: 5px;
   margin-top: 10px;
-  background-color: blueviolet;
   padding: 10px;
   color: white;
-  height: 150px;
   text-align: center;
 }
 .textbox h2 {
@@ -138,4 +120,14 @@ a {
 }
 .textbox p {
   margin-top: 15px;
+}
+
+/* ..................mobile view..................... */
+@media (min-width: 750px) {
+  .kategoriparent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 575px);
+    text-align: center;
+    justify-content: center;
+  }
 }
