@@ -2,8 +2,12 @@ html {
   --primary: #2f5576;
   --secondary: #709f80;
   --header: #246a59;
-  --background: #f1d8b6;
+  --background: #ffefda;
   --contrast: #ef796b;
+}
+
+body {
+  background-color: var(--background);
 }
 
 /* øvrige header */
