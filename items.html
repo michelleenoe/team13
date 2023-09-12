@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/items.css" />
-    <title>Items</title>
-  </head>
-  <body>
-    <header>
-      <section class="header-content">
-        <div class="logo">
-          <img src="./img/Salturt.png" alt="logo" />
-        </div>
-        <nav class="dropdown-menu">
-          <ul>
-            <li class="menu-item">
-              <a href="#">Menu</a>
-              <ul class="submenu">
-                <li class="submenu-item">
-                  <a href="#">Landskab</a>
-                  <ul class="nested-submenu">
-                    <li class="submenu-item">
-                      <a href="#">Vand</a>
-                      <ul class="nested-submenu">
-                        <li><a href="#">Strand</a></li>
-                        <li><a href="#">Strandeng</a></li>
-                        <li><a href="#">Vandløb</a></li>
-                      </ul>
-                    </li>
-                    <li class="submenu-item"><a href="#">Skov</a></li>
-                    <li class="submenu-item"><a href="#">Åbent landskab</a></li>
-                    <li class="submenu-item"><a href="#">By</a></li>
-                  </ul>
-                </li>
-                <li class="submenu-item">
-                  <a href="itemslist.html">Råvarer</a>
-                  <ul class="nested-submenu">
-                    <li class="submenu-item"><a href="#">Vand</a></li>
-                    <li class="submenu-item"><a href="#">Skov</a></li>
-                    <li class="submenu-item"><a href="#">Åbent landskab</a></li>
-                    <li class="submenu-item"><a href="#">By</a></li>
-                  </ul>
-                </li>
-                <li class="submenu-item">
-                  <a href="#">Opskrifter</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="picright_nav">
-          <img src="./img/sosalat.png" alt="billede" />
-        </div>
-      </section>
-    </header>
-    <main>
-      <div class="banner">
-        <img src="img/strandeng.webp" alt="" />
-      </div>
-      <div class="buttonscontainer">
-        <div>
-          <button type="button" class="cam">
-            <img src="img/cam.svg" alt="cam" />
-          </button>
-        </div>
-        <div>
-          <button type="button" class="item">
-            <img src="img/Strandmalde.png" alt="item" />
-          </button>
-        </div>
-        <div>
-          <button
-            type="button"
-            id="like"
-            class="like"
-            onclick="like()"
-          ></button>
-        </div>
-      </div>
 
-      <div class="raavareName">
-        <h1 class="dataName">Strandmalurt</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/items.css" />
+  <title>Items</title>
+</head>
+
+<body>
+  <header>
+    <section class="header-content">
+      <div class="logo">
+        <img src="./img/salturt.webp" alt="logo" />
       </div>
+      <nav class="dropdown-menu">
+        <ul>
+          <li class="menu-item">
+            <a href="#">Menu</a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="#">Landskab</a>
+                <ul class="nested-submenu">
+                  <li class="submenu-item">
+                    <a href="#">Vand</a>
+                    <ul class="nested-submenu">
+                      <li><a href="#">Strand</a></li>
+                      <li><a href="#">Strandeng</a></li>
+                      <li><a href="#">Vandløb</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu-item"><a href="#">Skov</a></li>
+                  <li class="submenu-item"><a href="#">Åbent landskab</a></li>
+                  <li class="submenu-item"><a href="#">By</a></li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <a href="itemslist.html">Råvarer</a>
+                <ul class="nested-submenu">
+                  <li class="submenu-item"><a href="#">Vand</a></li>
+                  <li class="submenu-item"><a href="#">Skov</a></li>
+                  <li class="submenu-item"><a href="#">Åbent landskab</a></li>
+                  <li class="submenu-item"><a href="#">By</a></li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <a href="#">Opskrifter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="picright_nav">
+        <img src="./img/sosalat.webp" alt="billede" />
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="banner">
+      <img src="img/strandeng.webp" alt="" />
+    </div>
+    <div class="buttonscontainer">
+      <div>
+        <button type="button" class="cam">
+          <img src="img/cam.svg" alt="cam" />
+        </button>
+      </div>
+      <div>
+        <button type="button" class="item">
+          <img src="img/starndmalde.webp" alt="item" />
+        </button>
+      </div>
+      <div>
+        <button type="button" id="like" class="like" onclick="like()"></button>
+      </div>
+    </div>
 
-      <div class="tabcontainer">
-        <div class="tabs">
-          <input type="radio" name="tabs" id="tabone" checked="checked" />
-          <label for="tabone">Om mig</label>
-          <div class="tab">
-            <h1>Om mig</h1>
-            <p>
-              Her kunne der så stå noget om det aktuelle item. Fx hvordan 'jeg'
-              ser ud, farver, teksturer, duft mm. Det er vidst ikke noget info
-              der allerede ligger i databasen - eller jo måske på nogle af
-              objekterne. Men self er det ideen at den også skal kunne gå ind og
-              finde denne data frem via json.
-            </p>
-          </div>
+    <div class="raavareName">
+      <h1 class="dataName">Strandmalurt</h1>
+    </div>
 
-          <input type="radio" name="tabs" id="tabtwo" />
-          <label for="tabtwo">Opskrifter</label>
-          <div class="tab">
-            <h1>Opskrifter</h1>
-            <p>
-              Og her kunne item så indgå i nogle lækre opskrifter. Her skriver
-              jeg bare lige noget mere, så vi ser hvordan det ser ud når der
-              kommer lidt mere content ind i denne tab. Jeg tænker at den bare
-              begynder at vokse nedad, så den bliver scrollable. Lad os se.
-            </p>
-          </div>
+    <div class="tabcontainer">
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked" />
+        <label for="tabone">Om mig</label>
+        <div class="tab">
+          <h1>Om mig</h1>
+          <p>
+            Her kunne der så stå noget om det aktuelle item. Fx hvordan 'jeg'
+            ser ud, farver, teksturer, duft mm. Det er vidst ikke noget info
+            der allerede ligger i databasen - eller jo måske på nogle af
+            objekterne. Men self er det ideen at den også skal kunne gå ind og
+            finde denne data frem via json.
+          </p>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo" />
+        <label for="tabtwo">Opskrifter</label>
+        <div class="tab">
+          <h1>Opskrifter</h1>
+          <p>
+            Og her kunne item så indgå i nogle lækre opskrifter. Her skriver
+            jeg bare lige noget mere, så vi ser hvordan det ser ud når der
+            kommer lidt mere content ind i denne tab. Jeg tænker at den bare
+            begynder at vokse nedad, så den bliver scrollable. Lad os se.
+          </p>
         </div>
       </div>
-    </main>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/items.js"></script>
-  </body>
+    </div>
+  </main>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/items.js"></script>
+</body>
+
 </html>
