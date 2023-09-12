@@ -27,47 +27,107 @@ html {
   height: 100%;
 }
 .vedvandetbanner h1 {
-  font-size: 5rem;
-  padding: 200px;
+  font-size: 4rem;
+  padding: 0;
   text-align: center;
   color: white;
   font-family: lato;
-  font-weight: 900;
+  font-weight: 300;
   filter: drop-shadow(4px 2px 5px #00000069);
 }
-.kategoriparent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
+.vedvandetbanner h1 {
+  padding: 200px 0; /* Adjust to your preference */
 }
 .strandengencontainer {
-  background-color: red;
+  background-color: #709f80;
   margin: 5px;
-  padding: 200px;
+  padding: 20px;
+  height: 600px;
   color: white;
-  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .strandencontainer {
-  background-color: blue;
+  background-color: #709f80;
   margin: 5px;
-  padding: 200px;
+  padding: 20px;
+  height: 600px;
   color: white;
-  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .vandloebcontainer {
-  background-color: green;
+  background-color: #709f80;
   margin: 5px;
-  padding: 200px;
+  padding: 20px;
+  height: 600px;
   color: white;
-  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-a {
-  color: inherit;
+.strandengencontainer:hover,
+.strandencontainer:hover,
+.vandloebcontainer:hover {
+  background-color: #2f5576;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.strandengencontainer img,
+.strandencontainer img,
+.vandloebcontainer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.strandengencontainer h4,
+.strandencontainer h4,
+.vandloebcontainer h4 {
+  font-family: lato;
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+}
+.strandengencontainer p,
+.strandencontainer p,
+.vandloebcontainer p {
+  font-family: lato;
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
 }
 .textbox {
   margin: 5px;
   margin-top: 10px;
-  background-color: blueviolet;
-  padding: 5px;
+  padding: 10px;
   color: white;
+  text-align: center;
+}
+.textbox h2 {
+  text-align: center;
+  margin-top: 5px;
+}
+.textbox p {
+  margin-top: 15px;
+}
+
+/* ..................mobile view..................... */
+@media (min-width: 750px) {
+  .kategoriparent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 575px);
+    text-align: center;
+    justify-content: center;
+  }
 }
