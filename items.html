@@ -79,23 +79,23 @@
     </div>
 
     <div class="raavareName">
-      <h1 class="dataName">Strandmalurt</h1>
+      <h1 class="dataName" id="itemName"></h1>
     </div>
+
 
     <div class="tabcontainer">
       <div class="tabs">
         <input type="radio" name="tabs" id="tabone" checked="checked" />
         <label for="tabone">Om mig</label>
         <div class="tab">
-          <h1>Om mig</h1>
-          <p>
-            Her kunne der så stå noget om det aktuelle item. Fx hvordan 'jeg'
-            ser ud, farver, teksturer, duft mm. Det er vidst ikke noget info
-            der allerede ligger i databasen - eller jo måske på nogle af
-            objekterne. Men self er det ideen at den også skal kunne gå ind og
-            finde denne data frem via json.
-          </p>
+          <h1 id="itemTitle">Om mig</h1>
+          <h3 class="navn" id="item_name"></h3>
+          <p class="kategori" id="itemKategori"></p>
+          <p class="landskab" id="itemLandskab"></p>
+          <p class="season" id="itemSeason"></p>
+          <p class="sub_landskab" id="itemSubLandskab"></p>
         </div>
+
 
         <input type="radio" name="tabs" id="tabtwo" />
         <label for="tabtwo">Opskrifter</label>
