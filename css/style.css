@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 html {
-  --primary: #2f5576;
+  --primary: #1e3a52;
   --primary_soft: #88a5be;
   --secondary: #709f80;
-  --header: #246a59;
+  --header: #2c754d;
   --background: #ffefda;
   --contrast: #ef796b;
 }
@@ -16,7 +16,7 @@ html {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--primary);
 }
 h1,
 h2,
@@ -35,30 +35,37 @@ body {
 /* øvrige header */
 
 .logo {
-  max-width: 100px;
-  margin-right: 20px;
+  height: 100px;
+  width: auto;
+  padding: 0.5em;
 }
 
 .logo img {
-  border-radius: 50% !important;
+  height: 90px;
+  width: auto;
 }
 .picleft img {
   max-width: 100px;
   height: auto;
   border-radius: 50% !important;
 }
+
 .picright_nav img {
-  max-width: 100px;
+  height: 75px;
+  width: auto;
   position: absolute;
-  top: 0%;
+  top: 1em;
   right: 15px;
-  border-radius: 50% !important;
+  background-color: var(--secondary);
+  border: 1em solid;
+  border-radius: 50%;
+  border-color: var(--secondary);
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  background-color: darkolivegreen;
+  background-color: var(--header);
 }
 /* */
 
