@@ -1,9 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Wellfleet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
 html {
   --primary: #2f5576;
   --secondary: #709f80;
   --header: #246a59;
   --background: #ffefda;
   --contrast: #ef796b;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: var(--secondary);
+}
+h1,
+h2,
+h3,
+ul,
+li,
+a {
+  font-family: "Wellfleet", serif;
+  color: var(--primary);
 }
 
 body {
