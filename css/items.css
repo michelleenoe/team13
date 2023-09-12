@@ -14,6 +14,8 @@
   display: flex;
   justify-content: space-around;
   translate: 0% -20%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .cam {
@@ -27,6 +29,8 @@
   width: 400px;
   border-radius: 50%;
   translate: 0% -40%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #like {
@@ -44,7 +48,14 @@
   background-image: url(../img/fullheart.svg);
 }
 
-/*** Tabs - har taget udgangspunkt i denne fra codepen: https://codepen.io/mikestreety/pen/yVNNNm ***/
+.raavareName {
+  display: flex;
+  justify-content: center;
+  translate: 0% -500%;
+}
+
+/*** Tabs 
+ - har taget udgangspunkt i denne fra codepen: https://codepen.io/mikestreety/pen/yVNNNm ***/
 
 .tabcontainer {
   max-width: 800px;
@@ -94,16 +105,43 @@
   display: block;
 }
 
-/* media på tabs */
+/************* mobil **************/
 
-@media (max-width: 45em) {
+@media (max-width: 800px) {
+  /**** mobiltabs ****/
+  /*
   .tabs .tab,
   .tabs label {
     order: initial;
   }
   .tabs label {
     width: 100%;
-    margin-right: 0;
+    margin: auto;
     margin-top: 0.2rem;
+  }
+  /**** mobiltabs ****/
+
+  .raavareName {
+    translate: 0% -150%;
+  }
+
+  .cam {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .item {
+    height: 20px;
+    width: 200px;
+    border-radius: 50%;
+    translate: 0% -200%;
+  }
+
+  #like {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-size: cover;
   }
 }
