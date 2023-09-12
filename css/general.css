@@ -1,15 +1,15 @@
 html {
-  --primary: #2f5576;
+  --primary: #1e3a52;
   --primary_soft: #88a5be;
   --secondary: #709f80;
-  --header: #246a59;
+  --header: #2c754d;
   --background: #ffefda;
   --contrast: #ef796b;
 }
 /************************MENU*****************************/
 .dropdown-menu ul {
   width: 200px;
-  background-color: darkolivegreen;
+  background-color: var(--header);
 }
 
 .menu-item {
@@ -20,11 +20,12 @@ html {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
-  color: black;
+  color: var(--primary);
+  font-size: 2cqw;
 }
 
 .menu-item > a:hover {
-  background-color: #444;
+  background-color: var(--secondary);
 }
 
 .submenu {
@@ -46,13 +47,14 @@ html {
 
 .submenu-item > a {
   padding: 10px 20px;
-  color: #fff;
+  color: var(--primary);
   display: block;
   white-space: nowrap;
+  font-size: 1cqw;
 }
 
 .submenu-item > a:hover {
-  background-color: #555;
+  background-color: var(--secondary);
 }
 
 .nested-submenu {
@@ -62,7 +64,7 @@ html {
   left: 100%;
   width: 200px;
   z-index: 2;
-  border-left: 2px solid #fff;
+  border-left: 2px solid var(--primary_soft);
 }
 
 .submenu-item:hover .nested-submenu {
@@ -71,13 +73,13 @@ html {
 
 .nested-submenu a {
   padding: 10px 20px;
-  color: #fff;
+  color: var(--primary);
   display: block;
   white-space: nowrap;
 }
 
 .nested-submenu a:hover {
-  background-color: #666;
+  background-color: var(--secondary);
 }
 
 .submenu-item:nth-child(1) .nested-submenu {
@@ -87,7 +89,7 @@ html {
   left: 100%;
   width: 200px;
   z-index: 2;
-  border-left: 2px solid #fff;
+  border-left: 2px solid var(--primary_soft);
 }
 
 .submenu-item:nth-child(1):hover .nested-submenu {
@@ -95,6 +97,7 @@ html {
 }
 
 /**********************ITEM LIST**********************/
+
 .grid_itemlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -143,4 +146,57 @@ html {
 
 .area_description p {
   padding: 2em;
+}
+
+/*Mobil view*/
+@media (max-width: 800px) {
+  .grid_itemlist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1px;
+    place-items: center;
+  }
+
+  .grid_itemlist img {
+    height: 150px;
+    width: auto;
+    display: flex;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .grid_itemlist p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    transition: color 0.4s;
+  }
+
+  .grid_itemlist p:hover {
+    color: var(--contrast);
+  }
+
+  .itemslist h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .itemslist h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1em 0em 0.5em 0em;
+  }
+
+  .itemslist h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0em 0em 1em 0em;
+    color: var(--primary_soft);
+  }
+
+  .area_description p {
+    padding: 1.5em;
+  }
 }
