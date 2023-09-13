@@ -82,6 +82,7 @@ strong,
 li,
 br {
   color: var(--background);
+  font-family: "Lato", sans-serif;
 }
 
 .dataName {
