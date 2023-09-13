@@ -9,7 +9,7 @@ fetch(apiUrl, {
 })
 .then((response) => response.json())
 .then((data) => {
-  showData(data);
+  showSeptember(data);
   showAutumn(data);
   showWinter(data);
   showFall(data);
@@ -19,16 +19,15 @@ fetch(apiUrl, {
   console.error("Error fetching data:", error);
 });
 
-function showData(items) {
+function showSeptember(items) {
   const template = document.querySelector("#itemsTemplate");
-  const gridItemlist = document.querySelector(".grid_itemlist");
+  const gridItemlist = document.querySelector(".grid_itemlist.september");
 
   // Clear the existing items in the grid
   // gridItemlist.innerHTML = "";
 
   items.forEach((element) => {
-      if (element.kategori.toLowerCase().includes("strand")) {
-      (element.season.toLowerCase().includes("september")) 
+      if (element.months.toLowerCase().includes("september")) {
           const copy = template.content.cloneNode(true);
           copy.querySelector(".img").src = element.landskab_billede;
           copy.querySelector(".navn").textContent = element.item_name;
