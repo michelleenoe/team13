@@ -77,7 +77,10 @@ html {
 }
 
 .tabcontainer p,
-h2 {
+h2,
+strong,
+li,
+br {
   color: var(--background);
 }
 .tabs {
