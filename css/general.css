@@ -9,7 +9,8 @@ html {
 /************************MENU*****************************/
 .dropdown-menu ul {
   width: 200px;
-  background-color: var(--header);
+  background-color: var(--background);
+  z-index: 100;
 }
 
 .menu-item {
@@ -24,6 +25,7 @@ html {
   text-decoration: none;
   color: var(--primary);
   font-size: 2cqw;
+  z-index: 1;
 }
 
 .menu-item > a:hover {
@@ -64,7 +66,6 @@ html {
   top: 0;
   left: 100%;
   width: 200px;
-  z-index: 2;
   border-left: 2px solid var(--primary_soft);
 }
 
@@ -202,7 +203,7 @@ html {
   }
 }
 /* ..................mobile view menu..................... */
-@media (max-width: 750px) {
+/*@media (max-width: 750px) {
   .desktop-header {
     display: none;
   }
@@ -211,7 +212,7 @@ html {
   .mobile-header {
     display: none !important;
   }
-}
+}*/
 .burger-icon {
   display: flex;
   flex-direction: column;
