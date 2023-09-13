@@ -83,6 +83,11 @@ li,
 br {
   color: var(--background);
 }
+
+.dataName {
+  color: var(--primary);
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
