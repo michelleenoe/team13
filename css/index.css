@@ -122,7 +122,6 @@ html {
   margin-top: 15px;
 }
 
-/* ..................mobile view..................... */
 @media (min-width: 750px) {
   .kategoriparent {
     display: grid;
