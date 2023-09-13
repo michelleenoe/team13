@@ -61,19 +61,14 @@ html {
   background-image: url(../img/fullheart.svg);
 }
 
-.raavareName {
-  display: flex;
-  justify-content: center;
-  translate: 0% -500%;
-}
-
 /*** Tabs 
  - har taget udgangspunkt i denne tab fra codepen: https://codepen.io/mikestreety/pen/yVNNNm ***/
 
 .tabcontainer {
   max-width: 800px;
+  height: 800px;
   margin: auto;
-  translate: 0% -30%;
+  translate: 0% -13%;
 }
 
 .tabcontainer p,
@@ -85,8 +80,15 @@ br {
   font-family: "Lato", sans-serif;
 }
 
+.raavareName {
+  display: flex;
+  justify-content: center;
+  translate: 0% -250%;
+}
 .dataName {
   color: var(--primary);
+  font-family: "Wellfleet", serif;
+  font-size: 4cqw;
 }
 
 .tabs {
