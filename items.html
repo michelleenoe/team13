@@ -1,118 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/items.css" />
-    <title>Items</title>
-  </head>
 
-  <body>
-    <header>
-      <section class="header-content">
-        <div class="logo">
-          <a href="index.html"> <img src="./img/logo_vm1.svg" alt="logo" /></a>
-        </div>
-        <nav class="dropdown-menu">
-          <ul>
-            <li class="menu-item">
-              <a href="#">Menu</a>
-              <ul class="submenu">
-                <li class="submenu-item">
-                  <a href="#">Landskab</a>
-                  <ul class="nested-submenu">
-                    <li class="submenu-item">
-                      <a href="#">Vand</a>
-                      <ul class="nested-submenu">
-                        <li><a href="itemslist.html">Strand</a></li>
-                        <li><a href="#">Strandeng</a></li>
-                        <li><a href="#">Vandløb</a></li>
-                      </ul>
-                    </li>
-                    <li class="submenu-item"><a href="#">Skov</a></li>
-                    <li class="submenu-item"><a href="#">Åbent landskab</a></li>
-                    <li class="submenu-item"><a href="#">By</a></li>
-                  </ul>
-                </li>
-                <li class="submenu-item">
-                  <a href="itemslist.html">Råvarer</a>
-                  <ul class="nested-submenu">
-                    <li class="submenu-item"><a href="#">Vand</a></li>
-                    <li class="submenu-item"><a href="#">Skov</a></li>
-                    <li class="submenu-item"><a href="#">Åbent landskab</a></li>
-                    <li class="submenu-item"><a href="#">By</a></li>
-                  </ul>
-                </li>
-                <li class="submenu-item">
-                  <a href="#">Opskrifter</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="picright_nav">
-          <img src="./img/avatar_779755.png" alt="avatar" />
-        </div>
-      </section>
-    </header>
-    <main>
-      <div class="banner">
-        <img src="img/strandeng.webp" alt="" />
-      </div>
-      <div class="buttonscontainer">
-        <div>
-          <button type="button" class="cam">
-            <img src="img/cam.svg" alt="cam" />
-          </button>
-        </div>
-        <div>
-          <button type="button" class="item">
-            <img class="singleviewItem" src="img/starndmalde.webp" alt="item" />
-          </button>
-        </div>
-        <div>
-          <button
-            type="button"
-            id="like"
-            class="like"
-            onclick="like()"
-          ></button>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/items.css" />
+  <title>Items</title>
+</head>
 
-      <div class="raavareName">
-        <h1 class="dataName" id="item_name"></h1>
+<body>
+  <header class="desktop-header">
+    <section class="header-content">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo_vm1.svg" alt="logo"></a>
       </div>
+      <nav class="dropdown-menu">
+        <ul>
+          <li class="menu-item">
+            <a href="#">Menu</a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="#">Landskab</a>
+                <ul class="nested-submenu">
+                  <li class="submenu-item">
+                    <a href="#">Vand</a>
+                    <ul class="nested-submenu">
+                      <li><a href="itemslist.html">Strand</a></li>
+                      <li><a href="#">Strandeng</a></li>
+                      <li><a href="#">Vandløb</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu-item"><a href="#">Skov</a></li>
+                  <li class="submenu-item"><a href="#">Åbent landskab</a></li>
+                  <li class="submenu-item"><a href="#">By</a></li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <a href="itemslist.html">Råvarer</a>
+                <ul class="nested-submenu">
+                  <li class="submenu-item"><a href="#">Vand</a></li>
+                  <li class="submenu-item"><a href="#">Skov</a></li>
+                  <li class="submenu-item"><a href="#">Åbent landskab</a></li>
+                  <li class="submenu-item"><a href="#">By</a></li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <a href="#">Opskrifter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="picright_nav">
+        <img src="./img/avatar_779755.png" alt="avatar">
+      </div>
+    </section>
+  </header>
+  <header class="mobile-header">
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo_vm1.svg" alt="logo"></a>
+    </div>
+    <div class="burger-menu">
+      <div class="burger-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="">placeholder</a></li>
+          <li><a href="">placeholder</a></li>
+        </ul>
+      </nav>
+    </div>
 
-      <div class="tabcontainer">
-        <div class="tabs">
-          <input type="radio" name="tabs" id="tabone" checked="checked" />
-          <label for="tabone">Om mig</label>
-          <div class="tab">
-            <h1 id="itemTitle">Om mig</h1>
-            <p class="kategori" id="itemKategori"></p>
-            <p class="landskab" id="itemLandskab"></p>
-            <p class="season" id="itemSeason"></p>
-            <p class="sub_landskab" id="itemSubLandskab"></p>
-          </div>
 
-          <input type="radio" name="tabs" id="tabtwo" />
-          <label for="tabtwo">Opskrifter</label>
-          <div class="tab">
-            <h1>Opskrifter</h1>
-            <p>
-              Og her kunne item så indgå i nogle lækre opskrifter. Her skriver
-              jeg bare lige noget mere, så vi ser hvordan det ser ud når der
-              kommer lidt mere content ind i denne tab. Jeg tænker at den bare
-              begynder at vokse nedad, så den bliver scrollable. Lad os se.
-            </p>
-          </div>
+  </header>
+
+  <main>
+    <div class="banner">
+      <img src="img/strandeng.webp" alt="" />
+    </div>
+    <div class="buttonscontainer">
+      <div>
+        <button type="button" class="cam">
+          <img src="img/cam.svg" alt="cam" />
+        </button>
+      </div>
+      <div>
+        <button type="button" class="item">
+          <img class="singleviewItem" src="img/starndmalde.webp" alt="item" />
+        </button>
+      </div>
+      <div>
+        <button type="button" id="like" class="like" onclick="like()"></button>
+      </div>
+    </div>
+
+    <div class="raavareName">
+      <h1 class="dataName" id="item_name"></h1>
+    </div>
+
+    <div class="tabcontainer">
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked" />
+        <label for="tabone">Om mig</label>
+        <div class="tab">
+          <h1 id="itemTitle">Om mig</h1>
+          <p class="kategori" id="itemKategori"></p>
+          <p class="landskab" id="itemLandskab"></p>
+          <p class="season" id="itemSeason"></p>
+          <p class="sub_landskab" id="itemSubLandskab"></p>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo" />
+        <label for="tabtwo">Opskrifter</label>
+        <div class="tab">
+          <h1>Opskrifter</h1>
+          <p>
+            Og her kunne item så indgå i nogle lækre opskrifter. Her skriver
+            jeg bare lige noget mere, så vi ser hvordan det ser ud når der
+            kommer lidt mere content ind i denne tab. Jeg tænker at den bare
+            begynder at vokse nedad, så den bliver scrollable. Lad os se.
+          </p>
         </div>
       </div>
-    </main>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/items.js"></script>
-  </body>
+    </div>
+  </main>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/items.js"></script>
+  <script src="js/burger.js"></script>
+</body>
+
 </html>
