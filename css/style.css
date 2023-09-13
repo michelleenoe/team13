@@ -38,12 +38,15 @@ body {
   height: 100px;
   width: auto;
   padding: 0.5em;
+  z-index: 1;
 }
 
 .logo img {
-  height: 90px;
-  width: auto;
+  height: 120px;
+  width: 120px;
+  translate: 40% 20%;
 }
+
 .picleft img {
   max-width: 100px;
   height: auto;
@@ -51,7 +54,7 @@ body {
 }
 
 .picright_nav img {
-  height: 75px;
+  height: 120px;
   width: auto;
   position: absolute;
   top: 1em;
@@ -60,9 +63,12 @@ body {
   border: 1em solid;
   border-radius: 50%;
   border-color: var(--secondary);
+  z-index: 1;
+  translate: -40% 0%;
 }
 
 .header-content {
+  height: 90px;
   display: flex;
   align-items: center;
   background-color: var(--header);
@@ -99,4 +105,22 @@ img {
 .banner img:last-child {
   grid-row: 1;
   grid-column: 1;
+}
+
+@media (max-width: 800px) {
+  .header-content {
+    height: 70px;
+  }
+
+  .logo img {
+    height: 80px;
+    width: 80px;
+    translate: 15% 30%;
+  }
+
+  .picright_nav img {
+    height: 80px;
+    width: 80px;
+    translate: 0% -10%;
+  }
 }

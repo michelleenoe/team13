@@ -14,6 +14,7 @@ html {
 
 .menu-item {
   position: relative;
+  translate: 30% 0;
 }
 
 .menu-item > a {
@@ -34,7 +35,6 @@ html {
   top: 100%;
   left: 0;
   width: 200px;
-  z-index: 1;
 }
 
 .menu-item:hover .submenu {
