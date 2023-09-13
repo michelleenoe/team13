@@ -35,6 +35,10 @@
   background-repeat: no-repeat;
 }
 
+.singleviewItem {
+  border-radius: 50%;
+}
+
 #like {
   height: 150px;
   width: 150px;
@@ -57,7 +61,7 @@
 }
 
 /*** Tabs 
- - har taget udgangspunkt i denne fra codepen: https://codepen.io/mikestreety/pen/yVNNNm ***/
+ - har taget udgangspunkt i denne tab fra codepen: https://codepen.io/mikestreety/pen/yVNNNm ***/
 
 .tabcontainer {
   max-width: 800px;
@@ -121,7 +125,7 @@
     margin: auto;
     margin-top: 0.2rem;
   }
-  /**** mobiltabs ****/
+  /**** mobiltabs slut ****/
 
   .raavareName {
     translate: 0% -150%;
@@ -134,10 +138,10 @@
   }
 
   .item {
-    height: 20px;
+    height: 200px;
     width: 200px;
     border-radius: 50%;
-    translate: 0% -200%;
+    translate: 0% -50%;
   }
 
   #like {
