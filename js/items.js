@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const itemLandskab = document.getElementById("itemLandskab");
         itemLandskab.textContent = info.landskab;
         const itemSeason = document.getElementById("itemSeason");
-        itemSeason.textContent = JSON.parse(info.season);
+        itemSeason.textContent =(info.season);
         const itemSubLandskab = document.getElementById("itemSubLandskab");
         itemSubLandskab.textContent = info.sub_landskab;
         document.querySelector("#itemImg").src = info.landskab_billede; 
