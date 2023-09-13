@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
   })
     .then((response) => response.json())
     .then((data) => {
-      // Check if the item was found
+
       if (data) {
-        // Update the item name
+
         const item_Name= document.getElementById("item_name;");
         item_Name.textContent = data.item_name;
 
-        // Update other item details as needed
+   
         const itemTitle = document.getElementById("itemTitle");
         itemTitle.textContent = data.item_name;
         const itemKategori = document.getElementById("itemKategori");
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const itemSubLandskab = document.getElementById("itemSubLandskab");
         itemSubLandskab.textContent = data.sub_landskab;
       } else {
-        // Handle case where item is not found
+   
         console.error(`Item with ID ${id} not found.`);
       }
     })
