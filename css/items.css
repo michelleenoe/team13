@@ -24,6 +24,11 @@
   border-radius: 50%;
 }
 
+.cam img {
+  height: 100px;
+  width: auto;
+}
+
 .item {
   height: 400px;
   width: 400px;
