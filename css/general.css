@@ -201,3 +201,73 @@ html {
     padding: 1.5em;
   }
 }
+/* ..................mobile view menu..................... */
+@media (max-width: 750px) {
+  .desktop-header {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .mobile-header {
+    display: none !important;
+  }
+}
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.menu {
+  position: absolute;
+  top: 80px;
+  right: -300px;
+  width: 150px;
+  background-color: #2c754d;
+  transition: 0.2s;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.content {
+  margin-top: 100px;
+  padding: 20px;
+  color: #ffffff;
+}
+.show-menu .menu {
+  right: 0px;
+}
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: #2c754d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

@@ -18,20 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       if (data) {
         const info = data[0];
+        console.log(info);
         const item_Name = document.getElementById("item_name");
         item_Name.textContent = info.item_name;
-        console.log(data);
-
         const itemTitle = document.getElementById("itemTitle");
-        itemTitle.textContent = info.item_name;
+        itemTitle.textContent = info.item_title;
         const itemKategori = document.getElementById("itemKategori");
         itemKategori.textContent = info.kategori;
         const itemLandskab = document.getElementById("itemLandskab");
         itemLandskab.textContent = info.landskab;
         const itemSeason = document.getElementById("itemSeason");
-        itemSeason.textContent = info.season;
+        itemSeason.textContent = JSON.parse(info.season);
         const itemSubLandskab = document.getElementById("itemSubLandskab");
         itemSubLandskab.textContent = info.sub_landskab;
+        document.querySelector("#itemImg").src = info.landskab_billede; 
       } else {
         console.error(`Item with ID ${id} not found.`);
       }
