@@ -1,13 +1,14 @@
-.container {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  background-color: gray;
-  border-bottom: 2px solid blueviolet;
+html {
+  --primary: #1e3a52;
+  --primary_soft: #88a5be;
+  --secondary: #709f80;
+  --header: #2c754d;
+  --background: #ffefda;
+  --contrast: #ef796b;
 }
 
 .banner {
-  background-color: bisque;
+  background-color: var(--background);
 }
 
 .buttonscontainer {
@@ -72,8 +73,13 @@
 .tabcontainer {
   max-width: 800px;
   margin: auto;
+  translate: 0% -30%;
 }
 
+.tabcontainer p,
+h2 {
+  color: var(--background);
+}
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +93,7 @@
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #939596;
+  background: var(--header);
   font-weight: bold;
   transition: background ease 0.2s;
   border-radius: 5px 5px 0px 0px;
@@ -100,7 +106,7 @@
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #cbcbcb;
+  background: var(--secondary);
   border-radius: 0px 5px 5px 5px;
 }
 
@@ -109,7 +115,7 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #cbcbcb;
+  background: var(--secondary);
   border-radius: 5px 5px 0px 0px;
 }
 
