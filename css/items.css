@@ -135,6 +135,7 @@
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    background-image: url(../img/emptyheart.svg);
   }
 
   .item {
