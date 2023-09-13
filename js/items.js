@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const info = data[0];
         const item_Name = document.getElementById("item_name");
         item_Name.textContent = info.item_name;
-        const itemTitle = document.getElementById("itemTitle");
-        itemTitle.textContent = info.item_title;
         const itemKategori = document.getElementById("itemKategori");
         itemKategori.textContent = info.kategori;
         const itemLandskab = document.getElementById("itemLandskab");
