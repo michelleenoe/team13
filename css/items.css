@@ -26,9 +26,14 @@ html {
   background: white;
 }
 
-.cam img {
+#img1 {
   height: 100px;
   width: auto;
+  display: block;
+  translate: 20% 0%;
+}
+#img2 {
+  display: none;
 }
 
 .item {
@@ -88,7 +93,7 @@ br {
 .dataName {
   color: var(--primary);
   font-family: "Wellfleet", serif;
-  font-size: 4cqw;
+  font-size: 4rem;
 }
 
 .tabs {
@@ -151,7 +156,11 @@ br {
   /**** mobiltabs slut ****/
 
   .raavareName {
-    translate: 0% -380%;
+    translate: 0% -280%;
+  }
+
+  .raavareName h2 {
+    font-size: 2rem;
   }
 
   .cam {
@@ -163,6 +172,15 @@ br {
   .cam img {
     height: 60px;
     width: auto;
+  }
+
+  #img1 {
+    display: none;
+  }
+  #img2 {
+    display: block;
+    height: 75px;
+    width: 75px;
   }
 
   .item {
