@@ -149,13 +149,18 @@ br {
   /**** mobiltabs slut ****/
 
   .raavareName {
-    translate: 0% -150%;
+    translate: 0% -380%;
   }
 
   .cam {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+  }
+
+  .cam img {
+    height: 60px;
+    width: auto;
   }
 
   .item {
@@ -170,5 +175,12 @@ br {
     width: 80px;
     border-radius: 50%;
     background-size: cover;
+  }
+
+  .tabcontainer {
+    height: 800px;
+    max-width: 370px;
+    margin: auto;
+    translate: 0% -10%;
   }
 }
