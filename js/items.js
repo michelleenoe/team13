@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (data) {
         const info = data[0];
         console.log(info);
-        const item_Name = document.getElementById("item_name");
-        item_Name.textContent = info.item_name;
+        const item_name = document.getElementById("item_name");
+        item_name.textContent = info.item_name;
         const itemTitle = document.getElementById("itemTitle");
         itemTitle.textContent = info.item_title;
         const itemKategori = document.getElementById("itemKategori");
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const itemLandskab = document.getElementById("itemLandskab");
         itemLandskab.textContent = info.landskab;
         const itemSeason = document.getElementById("itemSeason");
-        itemSeason.textContent =(info.season);
+        itemSeason.textContent = info.season;
         const itemSubLandskab = document.getElementById("itemSubLandskab");
         itemSubLandskab.textContent = info.sub_landskab;
         document.querySelector("#itemImg").src = info.landskab_billede; 
