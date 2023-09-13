@@ -15,6 +15,7 @@ html {
 .menu-item {
   position: relative;
   translate: 30% 0;
+  z-index: 1;
 }
 
 .menu-item > a {
