@@ -1,26 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  line-height: 1.5;
-  font-family: "pt_serifregular", sans-serif;
-  background-color: ffefda;
-}
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding: 5px;
-}
-
-body,
 html {
-  height: 100%;
-  margin: 0;
+  --primary: #1e3a52;
+  --primary_soft: #88a5be;
+  --secondary: #709f80;
+  --header: #2c754d;
+  --background: #ffefda;
+  --contrast: #ef796b;
 }
-
 .vedvandetbanner {
   background-image: url(/img/Stranden-color-big.webp);
   width: auto;
@@ -39,7 +24,7 @@ html {
   padding: 200px 0; /* Adjust to your preference */
 }
 .strandengencontainer {
-  background-color: #709f80;
+  background-color: var(--secondary);
   margin: 5px;
   padding: 20px;
   height: 600px;
@@ -50,7 +35,7 @@ html {
   align-items: center;
 }
 .strandencontainer {
-  background-color: #709f80;
+  background-color: var(--secondary);
   margin: 5px;
   padding: 20px;
   height: 600px;
@@ -61,7 +46,7 @@ html {
   align-items: center;
 }
 .vandloebcontainer {
-  background-color: #709f80;
+  background-color: var(--secondary);
   margin: 5px;
   padding: 20px;
   height: 600px;
@@ -74,7 +59,7 @@ html {
 .strandengencontainer:hover,
 .strandencontainer:hover,
 .vandloebcontainer:hover {
-  background-color: #2f5576;
+  background-color: var(--primary);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .strandengencontainer img,
